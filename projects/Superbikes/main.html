@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Bikes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Bike</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a bike<br>It's a <span>Super Bike</span></h2>
+                <p>Superbikes are high-performance motorcycles designed for speed, agility, and 
+                    adrenaline-inducing rides. They typically feature powerful engines, advanced 
+                    suspension systems, lightweight materials, and aerodynamic designs for maximum 
+                    performance on the road or track. Superbikes are favored by enthusiasts and professional 
+                    2riders for their exceptional speed, handling, and exhilarating riding experience.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="assets/suzukihayabusa.png" class="bike">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="assets/suzukihayabusa.png" onclick="imgSlider('assets/suzukihayabusa.png');changeCircleColor('#a6a6a6')"></li>
+            <li><img src="assets/DucatiPV4.png" onclick="imgSlider('assets/DucatiPV4.png');changeCircleColor('#dc2b1e')"></li>
+            <li><img src="assets/zx10.png" onclick="imgSlider('assets/zx10.png');changeCircleColor('#7df327')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.instagram.com" target="_blank"><img src="assets/ig.png"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="assets/tw.png"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="assets/fb.png"></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.bike').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
